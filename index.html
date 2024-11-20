@@ -1,19 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Debugging Example</title>
-    <link rel="stylesheet" href="./style.css">  <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess My Number</title>
 </head>
 <body>
-
-    <h1>Welcome to the Debugging Example</h1>
-    <p id="message">The driver is not yet assigned.</p>
-
-    <button onclick="startDriving()">Start Driving</button>  <!-- Button to trigger JavaScript function -->
-
-    <script src="script.js"></script>  <!-- Link to JavaScript file -->
-
+    <header>
+        <h1>Guess My Number!</h1>
+        <p class="between">(betwwen 1 and 20)</p>
+        <button class="btn again">Again!</button>
+        <div calss="number">?</div>
+    </header>
+    <main>
+        <section class="left">
+            <input type="number" class="guess">
+            <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+            <p class="message">start guessing!</p>
+            <p class="label-score">100% score <span class="score">20</span></p>
+            <p class="label-highscore">
+                Highscore : <span class="score">0</span>
+            </p>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
